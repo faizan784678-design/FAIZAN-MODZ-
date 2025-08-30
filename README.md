@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAIZAN MODZ</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body {
+        background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+    }
+
+    body::before, body::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(150px);
+        z-index: 0;
+    }
+
+    body::before {
+        width: 400px; height: 400px;
+        background: #ff0000;
+        top: -100px; left: -100px;
+        animation: pulse 6s infinite alternate;
+    }
+
+    body::after {
+        width: 500px; height: 500px;
+        background: #ff1a1a;
+        bottom: -150px; right: -150px;
+        animation: pulse 8s infinite alternate-reverse;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.7; }
+        100% { transform: scale(1.5); opacity: 0.3; }
+    }
+
+    h1 {
+        z-index: 1;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        text-shadow: 0 0 15px #ff0000, 0 0 30px #ff4d4d;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 1;
+    }
+
+    .btn {
+        padding: 15px 40px;
+        border: none;
+        border-radius: 25px;
+        background: linear-gradient(45deg, #ff0000, #990000);
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: 0.3s all;
+        text-decoration: none;
+        text-align: center;
+        box-shadow: 0 0 20px #ff0000;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 40px #ff4d4d, 0 0 80px #ff0000;
+    }
+
+    @media(max-width: 500px){
+        h1 { font-size: 2rem; }
+        .btn { padding: 12px 25px; font-size: 1rem; }
+    }
+</style>
+</head>
+<body>
+
+<h1>𝓕𝓐𝓘𝓩𝓐𝓝 𝓜𝓞𝓓𝓩</h1>
+
+<div class="buttons">
+    <a href="https://Wa.me/923111670693?text=┾𝐇𝐞𝐥𝐥𝐨⏤͟͟F̷A̷I̷Z̷A̷N̷ M̷O̷D̷Z̷ target="_blank" class="btn">Contact Me</a>
+    <a href="https://chat.whatsapp.com/GGQiYe231Tr14hj9cbXJBL?mode=ems_copy_c" target="_blank" class="btn">Join My Group</a>
+    <a href="channel on WhatsApp: https://whatsapp.com/channel/0029VbAgXOI5vKABV8q9JX10" target="_blank" class="btn">Join My Channel</a>
+</div>
+
+</body>
+</html>
